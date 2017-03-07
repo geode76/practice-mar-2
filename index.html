@@ -15,7 +15,7 @@
         min-height: 100%;
         display: flex;
         flex-direction: column;
-        background-color: red;
+        background: #000 url(_gfx/cmn/body_bg.jpg) top center repeat-x;
       }
       .wrapper {
         flex: 1;
@@ -31,13 +31,13 @@
         background-image: url('./img/header.jpg')
       }
       .footer {
-        width: 72%;
+        width: 100%;
         height: 100px;
+        min-height: 100px;
         background-color: black;
         color: ghostwhite;
         position: bottom;
-        bottom: 0;
-        margin: 0 auto;
+        margin-top: 10px;
       }
       .copyright {
         color: ghostwhite;
@@ -94,7 +94,6 @@
         color: ghostwhite;
         text-decoration: none;
         font-size: 11.5px;
-
       }
       .subheader-links a:hover {
         background-color: red;
@@ -106,43 +105,111 @@
         background-image: url('./img/6.jpg');
       }
       .left-content {
-        width: 33.3%;
+        width: 28%;
         height: 70%;
-        background-color: blue;
         float: left;
       }
       .left-content-top {
         width: 100%;
         height: 70%;
-        background-color: darkred;
       }
       .left-content-top ul {
         list-style: none;
       }
       .left-content-top li {
-        padding-top: 23px;
+        padding-top: 28px;
+        padding-left: 50px;
         color: ghostwhite;
-        padding-right: 45px
+        background: rgba(248,80,50,1);
+        background: -moz-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 0%, rgba(139,0,0,1) 30%, rgba(179,23,9,1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(248,80,50,1)), color-stop(0%, rgba(241,111,92,1)), color-stop(30%, rgba(139,0,0,1)), color-stop(100%, rgba(179,23,9,1)));
+        background: -webkit-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 0%, rgba(139,0,0,1) 30%, rgba(179,23,9,1) 100%);
+        background: -o-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 0%, rgba(139,0,0,1) 30%, rgba(179,23,9,1) 100%);
+        background: -ms-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 0%, rgba(139,0,0,1) 30%, rgba(179,23,9,1) 100%);
+        background: linear-gradient(to bottom, rgba(248,80,50,1) 0%, rgba(241,111,92,1) 0%, rgba(139,0,0,1) 30%, rgba(179,23,9,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#b31709', GradientType=0 );
       }
       .left-content-top a {
         text-decoration: none;
-
+        align-items: center;
       }
       .left-content-bottom {
         width: 100%;
         height: 30%;
+        background-color: darkred;
+        border-radius: 0 0 0 20px;
+      }
+      .left-content-bottom ul {
+        list-style: none;
+      }
+      .left-content-bottom li {
+        padding-top: 25px;
+        padding-left: 50px;
+      }
+      .left-content-bottom a {
+        color: ghostwhite;
+      }
+      .left-content-bottom a:hover {
+        text-decoration: none;
       }
       .middle-content {
-        width: 33.3%;
+        width: 36%;
         height: 70%;
-        background-color: green;
         float: left;
       }
-      .right-content {
-        width: 33.4%;
+      .middle-content-top {
+        width: 100%;
+        height: 30%;
+        background-color: red;
+      }
+      .middle-content-top ul {
+        padding: 20px;
+        list-style: none;
+      }
+      .middle-content-top li {
+        margin-bottom: 20px;
+      }
+      .middle-content-top a {
+        color: ghostwhite;
+        font-size: 12px;
+      }
+      .middle-content-top a:hover {
+        text-decoration: none;
+      }
+      .middle-content-bottom {
+        width: 100%;
         height: 70%;
-        background-color: yellow;
+        background-color: green;
+      }
+      .middle-content-bottom h2 {
+        padding: 10px 10px 0 10px;
+        color: ghostwhite;
+      }
+      .middle-content-bottom ul {
+        padding: 10px;
+        color: ghostwhite;
+        list-style: none;
+        font-size: 13px;
+      }
+      .middle-content-bottom a {
+        color: ghostwhite;
+      }
+      .middle-content-bottom a:hover {
+        text-decoration: none;
+      }
+      .more-events {
+        text-align: right;
+      }
+      .right-content {
+        width: 36%;
+        height: 70%;
         float: left;
+      }
+      .right-content-top {
+        width: 100%;
+        height: 30%;
+        background-color: white;
+        align-items: center;
       }
     </style>
   </head>
@@ -201,15 +268,54 @@
 
         </aside>
         <div class="middle-content">
+          <div class="middle-content-top">
+            <ul>
+              <li><a href="#"><b>Email, Webadvisor, &amp Canvas</b> login steps</a></li>
+              <li><a href="#">Questions about changes to <b>DACA?</b></a></li>
+              <li><a href="#">Request a Transcript</a></li>
+            </ul>
+          </div>
+          <div class="middle-content-bottom">
+            <h2>Calander of Events</h2>
+            <ul>
+              <li><a href="#">Pool Table Tournament</a></li>
+              <li>3/7/2017</li>
+              <li>11:30 AM - 1:00 PM</li>
+            </ul>
+            <ul>
+              <li><a href="#">FCC Womens Softball vs Porterville College</a></li>
+              <li>3/7/2017</li>
+              <li>11:30 AM - 1:00 PM</li>
+            </ul>
+            <ul>
+              <li><a href="#">FCC Men's Basketball vs Cerro Coso</a></li>
+              <li>3/7/2017</li>
+              <li>11:30 AM - 1:00 PM</li>
+            </ul>
+            <ul>
+              <li><a href="#">FCC Theater Festival</a></li>
+              <li>3/7/2017</li>
+              <li>11:30 AM - 1:00 PM</li>
+            </ul>
+            <ul class="more-events">
+              <li><a href="#">More Events >></a></li>
+            </ul>
+          </div>
 
         </div>
         <div class="right-content">
+          <div class="right-content-top">
+            <a href="#">Canvas has replaced Blackboard for instruction</a>
+          </div>
+          <div class="right-content-bottom">
 
+          </div>
         </div>
       </article>
-      <footer class="footer">
-        <p class="copyright">&copy created by Allen Huddleston</p>
-      </footer>
+
     </div>
+    <footer class="footer">
+      <p class="copyright">&copy created by Allen Huddleston</p>
+    </footer>
   </body>
 </html>
